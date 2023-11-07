@@ -16,7 +16,6 @@ body {
     background-repeat: no-repeat;
     height: px;
 }
-
 /* MENU PRINCIPAL */
 #principal {
     width: 100%;
@@ -59,7 +58,6 @@ body {
     box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
     cursor: pointer;
 }
-
 /* SEÇÃO */
 section {
     display: flex;
@@ -91,9 +89,7 @@ header .destaque {
     font-weight: 700;
     padding: 5px;
 }
-
 /* FORMULÁRIO */
-
 form {
     font-family: var(--fonte-padrao);
     font-size: 30px;
@@ -150,7 +146,6 @@ input[type="submit"] {
     cursor: pointer;
     font-family: var(--fonte-padrao);
 }
-
 /* FOOTER */
 footer {
     width: 100%;
@@ -164,6 +159,7 @@ footer .linha1 {
     justify-content: space-around;
     text-align: center;
     align-items: center;
+    background-color: var(--azul-dnc);
 }
 
 footer ul {
@@ -219,15 +215,14 @@ footer .endereço {
 
 footer .linha2 {
     height: 35px;
-    background-color: var(--azul-dnc);
     display: flex;
     justify-content: center;
     margin: 0px;
     padding: 10px;
+    background-color: var(--azul-dnc);
 }
 
 footer .linha2 a {
-    font-family: var(--fonte-padrao);
     font-size: 18px;
     font-weight: 600;
     color: white;
@@ -239,56 +234,64 @@ footer .linha2 a:first-child {
     border-right: 2px solid white;
 }
 
-footer .linha2 a:hover{
+footer .linha2 a:hover {
     color: var(--cinza-hover);
 }
 
 @media only screen and (max-width:600px) {
-        /* MENU */
-        #principal {
-            flex-direction: column;
-            height: auto;
-        }
+    /* MENU */
+    #principal {
+        flex-direction: column;
+        height: auto;
+    }
 
-        #menu {
-            flex-direction: column;
-            width: 100%;
-            margin: 0px;
-        }
+    #menu {
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
 
-        #menu a {
-            display: flex;
-            height: 50px;
-            align-items: center;
-        }
+    #menu a {
+        display: flex;
+        height: 50px;
+        align-items: center;
+    }
 
-        #principal button {
-            width: 100%;
-            margin-right: 0px;
-        }
+    #principal button {
+        width: 100%;
+        margin-right: 0px;
+    }
 
-        /* SECTION */
-        section h1 {
-            font-size: 38px;
-        }
+    /* SECTION */
+    section h1 {
+        font-size: 38px;
+    }
 
-        section h2 {
-            font-size: 28px;
-            padding-right: 15px;
-            padding-left: 15px;
-        }
+    section h2 {
+        font-size: 28px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
 
-        form {
-            width: 95%;
-            font-size: 15px;
-        }
+    form {
+        width: 95%;
+        font-size: 15px;
+    }
 
-        .areaInteresse label {
-            font-size: 15px;
-        }   
+    .areaInteresse label {
+        font-size: 15px;
+    }
 
-        .checkbox label {
-            font-size: 15px;
-        }
+    .checkbox label {
+        font-size: 15px;
+    }
 
-}   
+    footer .linha1 {
+        flex-direction: column;
+    }
+
+    footer .endereço {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+}
